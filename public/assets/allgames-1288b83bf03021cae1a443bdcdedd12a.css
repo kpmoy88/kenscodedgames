@@ -1,0 +1,97 @@
+.allgamesmenu {
+	display: none;
+}
+
+#wrapper {
+	background-color: #C6C6C6;
+}
+
+.menuTitle {
+	text-align: center;
+	background-color: #D03030;
+	color: #FFF;
+	padding: 20px;
+	font-size: 20px;
+	border: 1px solid #000;
+}
+
+.gamelist h4 {
+	text-align: center;
+	padding: 15px;
+	cursor: pointer;
+	border: 1px solid #000;
+}
+
+.gamelist div {
+	background-color: #C6C6C6;
+}
+
+.gamelist ul {
+	text-align: center;
+	font-size: 15px;
+	height: 100px;
+}
+
+.gamelist ul li {
+	padding: 10px 0px;
+	cursor: default;
+}
+
+.playNow h4 {
+	background-color: orange;
+	color: #FFF;
+}
+
+.arrow-up, .arrow-down {
+	float: right;
+}
+
+.playNow li a {
+	text-decoration: none;
+	color: #E6BB00;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 16px;
+}
+
+.inDevelopment h4 {
+	background-color: #FFFB19;
+}
+
+.comingSoon h4 {
+	background-color: blue;
+	color: #FFF;
+}
+
+@media screen and (min-width: 480px) {
+	.gamelist h4 {
+		font-size: 20px
+	}
+
+	.playNow li a {
+		font-size: 23px;
+	}
+}
+
+@media screen and (min-width: 620px) {
+	.gamelist div {
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.gamelist h3 {
+		font-size: 30px;
+	}
+
+	.gamelist h4 {
+		font-size: 25px;
+	}
+
+	.gamelist ul {
+		font-size: 20px;
+	}
+
+	.gamelist ul li a:hover {
+	    font-size: 30px;
+	}
+}

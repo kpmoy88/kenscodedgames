@@ -7,7 +7,7 @@ gem 'rails', '4.1.1'
 
 gem 'rails_12factor', group: :production
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
+gem 'sqlite3', group: :development
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 4.0.3'
 # Use CoffeeScript for .js.coffee assets and views
