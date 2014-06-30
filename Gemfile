@@ -33,7 +33,7 @@ gem 'figaro'
 
 gem 'bxslider-rails'
 
-gem 'pg'
+gem 'pg',        group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

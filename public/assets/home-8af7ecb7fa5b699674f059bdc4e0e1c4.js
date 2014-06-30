@@ -50,3 +50,4 @@ function setSlideImg(slide, slideType) {
         $(slide).attr({src: "../../assets/crownanchor" + imgSize + ".png", alt: "crown-and-anchor"});
     }
 }
+;
