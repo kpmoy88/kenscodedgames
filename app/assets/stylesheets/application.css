@@ -1,0 +1,218 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require bxslider
+ */
+ 
+body {
+	font-family: 'Press Start 2P', cursive;
+}
+
+header {
+	background: #000;
+	height: 40px;
+	text-align: center;
+}
+
+.logo {
+	padding: 10px 0px;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 15px;
+}
+
+.navMenu {
+	display: none;
+}
+
+footer {
+	background: #000;
+	height: 90px;
+	color: #FFF;
+	font-size: 14px;
+	text-align: center;
+}
+
+footer div {
+	padding-top: 15px;
+}
+
+footer nav {
+	display: block;
+}
+
+.games li {
+	margin-bottom: 10px;
+}
+
+.siteInfo li {
+	float: left;
+	width: 50%;
+}
+
+footer nav a {
+	color: inherit;
+	font-size: 13px;
+}
+
+.contact {
+	text-align: left;
+}
+
+.contact a {
+	margin-left: 10px;
+}
+
+.about {
+	text-align: right;
+}
+
+.about a {
+	margin-right: 10px;
+}
+
+.copyright {
+	clear: both;
+	padding-top: 10px;
+}
+
+@media screen and (min-width: 480px) {
+	header {
+		height: 80px;
+	}
+
+	.logo {
+		padding-top: 30px;
+	}
+
+	.logo a {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (min-width: 640px) {
+	.logo {
+		float: left;
+		padding-left: 20px;
+	}
+
+	.navMenu, .navMenu ul
+	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		font-size: 18px;
+	}
+
+	.navMenu {
+		display: block;
+		float: right;
+		margin-top: 30px;
+		margin-right: 15%;
+	}
+
+	.navMenu a {
+		text-decoration: none;
+		color: yellow;
+	}
+
+	.navMenu ul 						
+	{ 
+        display: none; 
+        position: absolute; 
+        z-index: 10000 !important;
+        text-align: left;
+        background: #000;
+	}
+
+	.navMenu ul li {
+		border: 1px solid #FFF;
+		width: 200px;
+		font-size: 12px;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: -1px;
+	}
+
+	/* Hover effect for menu*/
+	ul.navMenu li:hover > ul 			
+	{ 
+		display:block;
+	}
+
+	.navMenu ul li a {
+		margin: 0px; display: block; width: 100%; height: 100%;
+	}
+
+	.games {
+		display: none;
+	}
+
+	footer div {
+		padding-top: 35px;
+	}
+
+	footer nav, .siteInfo ul, .copyright {
+		display: inline;
+	}
+
+	.siteInfo li {
+		float: none;
+		display: inline;
+	}
+
+	.contact, .about {
+		text-align: center;
+	}
+
+	.contact a {
+		margin-left: 0px;
+	}
+
+	.about a {
+		margin-right: 0px;
+	}
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

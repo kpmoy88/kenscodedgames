@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ken's Coded Games</title>
+	<%= stylesheet_link_tag "reset", "application", "layout", media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<header class="header">
+				<h1 class="logo"><%= link_to "Ken's Coded Games", root_path %></h1>
+				<ul class="navMenu">
+					<li class="sub1">
+						<a>Games</a>
+						<ul>
+							<li class="highlowmenu"><%= link_to "High-Low Dice", highlowdice_index_path %></li>
+							<li><%= link_to "All Games", allgames_index_path %></li>
+						</ul>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<div id="content cf">
+			<%= yield %>
+			<div class="push"></div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<footer>
+			<div>
+				<nav class="games">
+					<ul>
+						<li><%= link_to "Games", allgames_index_path %></li>
+					</ul>
+				</nav>
+				<nav class="siteInfo">
+					<ul>
+						<li class="contact"><a href="">Contact</a></li>
+						<li class="about"><a href="">About</a></li>
+					</ul>
+				</nav>
+				<p class="copyright">&copy;2014</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

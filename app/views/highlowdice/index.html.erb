@@ -1,0 +1,148 @@
+<%= stylesheet_link_tag "highlowdice" %>
+
+<section class="startgame">
+	<div class="startscreen">
+		<h1>High-Low Dice Game</h1>
+		<input class="inputName" type="text" placeholder="Type Name Here"></input>
+		<div>
+			<div class="startDisplay"><img class="spindiceclock" src="../../assets/question_side_die.png" alt="? Dice"></div>
+			<div class="startDisplay"><h2 class="playgame">Play Game</h2></div>
+			<div class="startDisplay"><img class="spindicecounter" src="../../assets/question_side_die.png" alt="? Dice"></div>
+		</div>
+	</div>
+</section>
+
+<section class="highlowgame">
+	<div class="gamescreen">
+		<h1 class="gameTitle">High-Low Dice Game</h1>
+		<section class="compArea cf">
+			<h2 class="compName"></h2>
+			<div class="comp profile">
+				<h2 class="compName"></h2>
+				<h3>Balance:</h3><p class="compBalance"></p>
+			</div>
+
+			<div class="compbet profile">
+				<ul>
+					<li><h3>Bet: </h3><p class="compBetType"></p></li>
+					<li><h4>Bet Amount:</h4><p class="compBetAmount"></p></li>
+				</ul>
+			</div>
+		</section>
+
+		<div class="dice cf">
+			<img id="dice1">
+			<img id="dice2">
+		</div>
+
+		<section class="userArea cf">
+			<h2 class="userName"></h3>
+			<div class="userbet profile">
+				<ul>
+					<li><h3>Bet: </h3><p class="userBetType"></p></li>
+					<li><h4>Bet Amount:</h4><p class="userBetAmount"></p></li>
+				</ul>
+			</div>
+
+			<div class="user profile">
+				<h2 class="userName"></h2>
+				<h3>Balance:</h3><p class="userBalance"></p>
+			</div>
+		</section>
+
+		<section class="betArea">
+			<div class="betMove">
+				<div class="placeBet">
+					<p>Bet Amount:</p><input class="inputBet" type="text" autocomplete="off"></input>
+				</div>
+				<div class="move cf">
+					<p>Bet Type</p>
+					<ul>
+						<li><h3 id="low"><a href="#lowPay">Low</a></h3></li>
+						<li><h3 id="seven" class="chipSeven"><a href="#sevenPay">Seven</a></h3></li>
+						<li><h3 id="high" class="chipHigh"><a href="#highPay">High</a></h3></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="submitBet">
+				<h2 class="button">Place Bet</h2>
+			</div>
+		</section>
+
+		<section class="rollArea">
+			<div class="rollDice">
+				<h2 class="button">Roll</h2>
+			</div>
+		</section>
+
+		<section class="outcome info">
+			<div class="border">
+				<h1>Round Summary</h1>
+				<p class="diceInfo"></p>
+				<p class="roundInfo"></p>
+				<p class="compBet"></p>
+				<p class="compInfo"></p>
+				<p class="compMoney"></p>
+				<p class="compBalanceInfo"></p>
+				<p class="userBet"></p>
+				<p class="userInfo"></p>
+				<p class="userMoney"></p>
+				<p class="userBalanceInfo"></p>
+			</div>
+		</section>
+
+		<section class="roundMenu cf">
+			<ul>
+				<li class="quit"><a>Quit</a></li>
+				<li class="continue"><a>Continue</a></li>
+			</ul>
+		</section>
+	</div>
+</section>
+
+<section class="endgame">
+	<div class="endscreen">
+		<h1 class="gameTitle">High-Low Dice Game</h1>
+
+		<h1 class="endState"></h1>
+
+		<section class="outcome info">
+			<div class="border">
+				<h1>Last Round Outcome</h1>
+				<p class="diceInfo"></p>
+				<p class="roundInfo"></p>
+				<p class="compBet"></p>
+				<p class="compInfo"></p>
+				<p class="compMoney"></p>
+				<p class="compBalanceInfo"></p>
+				<p class="userBet"></p>
+				<p class="userInfo"></p>
+				<p class="userMoney"></p>
+				<p class="userBalanceInfo"></p>
+			</div>
+		</section>
+
+		<section class="endInfo info">
+			<div class="border">
+				<h1>Game Summary</h1>
+				<p class="compEndInfo"></p>
+				<p class="userEndInfo"></p>
+				<p class="roundNumInfo"></p>
+				<p class="comphighBalance"></p>
+				<p class="comphighBet"></p>
+				<p class="userhighBalance"></p>
+				<p class="userhighBet"></p>
+			</div>
+		</section>
+	</div>
+
+	<section class="endMenu cf">
+		<ul>
+			<li><a href="index.html">Exit</a></li>
+			<li class="replay"><a href='#'class="replay">Replay</a></li>
+		</ul>
+	</section>
+</section>
+
+<%= javascript_include_tag "jQueryRotateCompressed", "blockUI","highlowdice" %>

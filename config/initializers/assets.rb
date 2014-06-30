@@ -1,0 +1,13 @@
+Rails.application.config.assets.precompile += %w( reset.css )
+Rails.application.config.assets.precompile += %w( layout.css )
+Rails.application.config.assets.precompile += %w( bxslider.css )
+Rails.application.config.assets.precompile += %w( home.css )
+Rails.application.config.assets.precompile += %w( allgames.css )
+Rails.application.config.assets.precompile += %w( highlowdice.css )
+
+Rails.application.config.assets.precompile += %w( bxslider.js )
+Rails.application.config.assets.precompile += %w( home.js )
+Rails.application.config.assets.precompile += %w( allgames.js )
+Rails.application.config.assets.precompile += %w( blockUI.js )
+Rails.application.config.assets.precompile += %w( jQueryRotateCompressed.js )
+Rails.application.config.assets.precompile += %w( highlowdice.js )

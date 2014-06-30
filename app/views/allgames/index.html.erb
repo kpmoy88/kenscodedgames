@@ -1,0 +1,37 @@
+<%= stylesheet_link_tag "allgames" %>
+
+<section class="gamelist">
+	<h3 class="menuTitle">Game List </h3>
+	<div class="playNow">
+		<h4>Play Now
+			<p class="arrow-up">&#9650;</p>
+			<p class="arrow-down">&#9660;</p>
+		</h4>
+		<ul>
+			<li><%= link_to "High-Low Dice Game", highlowdice_index_path %></li>
+		</ul>
+	</div>
+	<div class="inDevelopment">
+		<h4>In Development
+			<p class="arrow-up">&#9650;</p>
+			<p class="arrow-down">&#9660;</p>
+		</h4>
+		<ul>
+			<li>Odds & Evens</li>
+			<li>Rock, Paper, Scissors</li>
+		</ul>
+	</div>
+	<div class="comingSoon">
+		<h4>Coming Soon
+			<p class="arrow-up">&#9650;</p>
+			<p class="arrow-down">&#9660;</p>
+		</h4>
+		<ul>
+			<li>Craps</li>
+			<li>Crown and Anchor</li>
+		</ul>
+	</div>
+</section>
+
+
+<%= javascript_include_tag "allgames" %>

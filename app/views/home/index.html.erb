@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag "bxslider", "home", "layout" %>
+
+<p class="tagline">Classic games with retro <ins>flair</ins>!</p>
+<section class="slideArea">
+	<ul class="bxslider">
+		<li><%= link_to image_tag("highlow_780.png", :class => "slide1"), highlowdice_index_path %></li>
+	 	<li><img class="slide2"></li>
+	 	<li><img class="slide3"></li>
+	</ul>
+</section>
+<hr>
+<div class="blurbs cf">
+	<section class="playNow">
+		<div>
+			<h1>Play Now</h1>
+			<ul>
+				<li><%= link_to "High-Low Dice Game", highlowdice_index_path %></li>
+			</ul>
+			<%= link_to "All Games", allgames_index_path, :class => "button" %>
+		</div>
+	</section>
+	<section class="inDevelopment">
+		<div>
+			<h1>In Development<br>&<br>Coming Soon</h1>
+			<ul>
+				<li>Crown and Anchor</li>
+				<li>Rock,Paper,Scissors</li>
+			</ul>
+			<%= link_to "View Now", allgames_index_path, :class => "button" %>
+		</div>
+	</section>
+	<section class="comingSoon">
+		<div>
+			<h1>Contact Us</h1>
+			<p>Help make our website better. Suggestions for more games or any other inquiries. Contact Us Now</p>
+			<a class="button" href="#">Contact</a>
+		</div>
+	</section>
+</div>
+	
+		
+<%= javascript_include_tag "bxslider", "home" %>
