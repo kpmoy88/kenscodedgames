@@ -392,7 +392,6 @@ function checkAmountEmpty(betAmount) {
 function messageDisplay(title, message) {
     $('.modalTitle').text(title);
     $('.modalContent').text(message);
-    $.blockUI.defaults.css = { };
     $.blockUI({ message: $('#error-modal'), overlayCSS: { cursor: 'default' }});
     $('.blockUI.blockMsg').center();
 }
