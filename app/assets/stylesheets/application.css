@@ -124,6 +124,7 @@ footer nav a {
 		float: right;
 		margin-top: 30px;
 		margin-right: 15%;
+		cursor: default;
 	}
 
 	.navMenu a {
