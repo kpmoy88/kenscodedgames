@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  root :to => 'home#index'
 
   get 'allgames/index'
   get 'highlowdice/index'

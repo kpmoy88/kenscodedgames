@@ -37,6 +37,8 @@ gem 'figaro'
 
 gem 'bxslider-rails'
 
+gem 'blockuijs-rails',  :git => 'git://github.com/rusanu/blockuijs-rails.git'
+
 gem 'pg',        group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

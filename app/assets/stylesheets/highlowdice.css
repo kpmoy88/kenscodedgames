@@ -305,11 +305,15 @@ div.blockMsg {
  	padding: 10px;
  	cursor: pointer;
  	background-color: #444;
+ 	border: 1px solid #bbb;
  	width: 100px;
  	margin-left: auto;
  	margin-right: auto;
-
  	margin-bottom: 10px;
+}
+
+#error-modal h4:hover {
+	background-color: #333;
 }
 
 /* 
