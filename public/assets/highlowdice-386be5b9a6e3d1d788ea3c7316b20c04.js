@@ -3,6 +3,7 @@
  * 
  * Made by Kenneth Moy, kpmoy88@gmail.com, Bronx, New York, 06.2014
  */
+
  
 $('.playgame').click(startgame);
 
@@ -572,3 +573,4 @@ $.fn.center = function () {
     this.css("left", ( $(window).width() - this.width() ) / 2+$(window).scrollLeft() + "px");
     return this;
 }
+;
