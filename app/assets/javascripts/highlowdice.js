@@ -523,25 +523,25 @@ function getScreenSize() {
 
 function resetDieImage() {
     var imgSize = getScreenSize();
-    $('#dice1').attr({src: "../../assets/question_side_die" + imgSize + ".png", alt: "?"});
-    $('#dice2').attr({src: "../../assets/question_side_die" + imgSize + ".png", alt: "?"});
+    $('#dice1').attr({src: "../question_side_die" + imgSize + ".png", alt: "?"});
+    $('#dice2').attr({src: "../question_side_die" + imgSize + ".png", alt: "?"});
 }
 
 // Change die image based on random number
 function placeDieImage(dice, number) {
     var imgSize = getScreenSize();
     if(number == 1) {
-        $(dice).attr({src: "../../assets/one_side_die" + imgSize + ".png", alt: "1"});
+        $(dice).attr({src: "../one_side_die" + imgSize + ".png", alt: "1"});
     } else if (number == 2) {
-        $(dice).attr({src: "../../assets/two_side_die" + imgSize + ".png", alt: "2"});
+        $(dice).attr({src: "../two_side_die" + imgSize + ".png", alt: "2"});
     } else if (number == 3) {
-        $(dice).attr({src: "../../assets/three_side_die" + imgSize + ".png", alt: "3"});
+        $(dice).attr({src: "../three_side_die" + imgSize + ".png", alt: "3"});
     } else if (number == 4) {
-        $(dice).attr({src: "../../assets/four_side_die" + imgSize + ".png", alt: "4"});
+        $(dice).attr({src: "../four_side_die" + imgSize + ".png", alt: "4"});
     } else if (number == 5) {
-        $(dice).attr({src: "../../assets/five_side_die" + imgSize + ".png", alt: "5"});
+        $(dice).attr({src: "../five_side_die" + imgSize + ".png", alt: "5"});
     } else {
-        $(dice).attr({src: "../../assets/six_side_die" + imgSize + ".png", alt: "6"});
+        $(dice).attr({src: "../six_side_die" + imgSize + ".png", alt: "6"});
     }
 }
 
