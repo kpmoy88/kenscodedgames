@@ -6,7 +6,7 @@
 
 // Start slideshow jquery plugin
 $(document).ready(function(){
- 	$('.bxslider').bxSlider({
+ 	$('.bxslider').bxSlider({ startSlide: 0,
  		adaptiveHeight: true
  	});
 });

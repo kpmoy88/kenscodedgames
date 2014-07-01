@@ -1,0 +1,263 @@
+#wrapper {
+	background-color: #C6C6C6;
+}
+
+.tagline {
+	display: none;
+}
+
+.slideArea {
+	display: none;
+}
+
+.blurbs {
+	clear: both; 
+}
+
+.blurbs section {
+	padding: 20px 15px 20px 15px;
+	overflow: hidden;
+	border-bottom: 1px solid #000;
+} 
+
+.blurbs h1 {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px;
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: #FFF;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+.blurbs ul  {
+	padding: 20px 0px;
+}
+
+.blurbs ul li {
+	font-size: 15px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.blurbs ul li:last-child {
+	padding-bottom: 10px;
+}
+
+.blurbs div p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 17px;
+	font-size: 13px;
+	text-align: center;
+}
+
+.blurbs ul a {
+	color: red;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-decoration: none;
+}
+
+.blurbs ul a:hover {
+	font-size: 18px;
+}
+
+.button {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	color: #000;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: yellow;
+	padding: 10px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+	.tagline {
+		display: block;
+		background-color: #D03030;
+		text-align: center;
+		padding: 20px 10px;
+		margin-bottom: 10px;
+		line-height: 25px;
+		color: white;
+	}
+
+	.tagline ins {
+		color: yellow;
+	}
+
+	.slideArea {
+		display: block;
+		width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slideArea div {
+		margin: 0px 0px 10px 0px;
+		padding: 0px 0px 5px 0px;
+	}
+
+	/*Fix Chrome bug for bxslider */
+	.bx-viewport li {
+		min-height: 1px;
+		min-width: 1px;
+	}
+
+	hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.blurbs section {
+		padding: 0px;
+	}
+
+	.blurbs section:last-child {
+		box-shadow: none;
+	}
+
+	.playNow, .inDevelopment {
+		width: 50%;
+		height: 250px;
+		border-bottom: none;
+		overflow: hidden;
+		box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.15) inset;
+		padding: 0px;
+		margin: 10px 0px;
+	}
+
+	.playNow {
+		float: left;
+	}
+
+	.inDevelopment {
+		float: right;
+	}
+
+	.comingSoon {
+		clear: both;
+	}
+
+	.blurbs h1 {
+		font-size: 14px;
+		padding: 10px 5px;
+		width: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.blurbs div {
+		margin: 10px 0px;
+		padding: 10px 0px;
+	}
+
+	.blurbs ul li {
+		font-size: 14px;
+	}
+
+	.blurbs div p {
+		font-size: 14px;
+		margin: 0px 15px;
+		text-align: center;
+	}
+
+	.button {
+		width: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	.tagline {
+		font-size: 25px;
+	}
+
+	.comingSoon {
+		clear: none;
+	}
+
+	.button {
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+	}
+
+	.blurbs section {
+		width: 33%;
+		height: 250px;
+		float: left;
+		border-bottom: none;
+		overflow: hidden;
+		box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.15) inset;
+		padding: 0px;
+		margin: 10px 0px;
+		display: inline-block;
+	}
+
+	.slideArea {
+		display: block;
+		width: 780px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.playNow {
+		clear: both;
+	}
+
+	.blurbs h1 {
+		font-weight: bold;
+		font-size: 16px;
+		width: 240px;
+	}
+
+	.blurbs p {
+		line-height: 30px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.blurbs h1 {
+		font-size: 18px;
+		padding: 10px 5px;
+		width: 270px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.blurbs ul a {
+		font-size: 18px;
+	}
+
+	.blurbs ul a:hover {
+		font-size: 22px;
+	}
+}

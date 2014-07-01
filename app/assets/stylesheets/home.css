@@ -121,6 +121,12 @@
 		padding: 0px 0px 5px 0px;
 	}
 
+	/*Fix Chrome bug for bxslider */
+	.bx-viewport li {
+		min-height: 1px;
+		min-width: 1px;
+	}
+
 	hr {
 		width: 90%;
 		margin-left: auto;
